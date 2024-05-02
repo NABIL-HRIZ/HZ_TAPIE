@@ -1,0 +1,122 @@
+.header-container {
+    height: 70vh;
+    margin-inline: 50px;
+    margin-top: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+#header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    max-width: 50%;
+    left: 40px;
+    margin-top: 50px;
+    color: #fff;
+    animation: faulty-flicker 1s ease-in-out;
+}
+
+
+.header-content h3 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.header-content p {
+    font-size: 18px;
+    color: #f4f2f2;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+@keyframes faulty-flicker {
+    0% {
+        opacity: 0.1;
+    }
+
+    2% {
+        opacity: 0.1;
+    }
+
+    4% {
+        opacity: 0.5;
+    }
+
+    19% {
+        opacity: 0.5;
+    }
+
+    21% {
+        opacity: 0.1;
+    }
+
+    23% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.5;
+    }
+
+    83% {
+        opacity: 0.4;
+    }
+
+    87% {
+        opacity: 1;
+    }
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 8px;
+    background-color: #83a8bc;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #2b7182;
+}
+
+@media screen and (max-width:760px) {
+    .header-content {
+        max-width: 300px;
+    }
+
+    .header-content h3 {
+        font-size: 40px;
+    }
+
+    .header-content p {
+        font-size: 14px;
+    }
+
+
+}

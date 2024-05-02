@@ -1,0 +1,96 @@
+.tapie_item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.tapie_item_info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tapie_item_info .description {
+    font-size: 18px;
+    color: rgb(89, 87, 87);
+    animation: FradeIn 6S ease-in-out;
+}
+
+@keyframes fradeIn {
+    0% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.tapie_item_container {
+    perspective: 1000px;
+}
+
+.tapie_item_container>img {
+    width: 300px;
+    height: 300px;
+    opacity: 0.8;
+    transition: transform 0.6s;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #00000090;
+
+}
+
+
+
+.tapie_item_container>img:hover {
+
+    animation: rotateAnimation 2s ease-in-out;
+}
+
+
+.price {
+    margin-top: 20px;
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+.price>span {
+    color: #000;
+
+}
+
+.size>button {
+    padding: 10px;
+    margin-left: 20px;
+    background-color: rgb(189, 199, 218);
+    font-size: 18px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.size .meduim {
+    transform: scale(1.2);
+}
+
+.size>button:hover {
+    transform: scale(1.1);
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(-180deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+}

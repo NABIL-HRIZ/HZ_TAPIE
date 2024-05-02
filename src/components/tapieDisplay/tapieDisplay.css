@@ -1,0 +1,34 @@
+.tapie_display {
+    margin: 40px;
+}
+
+.tapie_display h2 {
+    font-size: 40px;
+    font-style: italic;
+    color: #000;
+}
+
+.tapie_display span {
+    color: hsl(164, 40%, 63%);
+}
+
+.tapie_display_item {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+@media screen and (max-width:760px) {
+    .tapie_display h2 {
+        font-size: 30px;
+    }
+
+    .tapie_display_item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}

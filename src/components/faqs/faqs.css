@@ -1,0 +1,20 @@
+.faqs {
+    padding: 40px;
+}
+
+.faqs>h2 {
+    font-size: 40px;
+    font-style: italic;
+    color: #000;
+}
+
+.faqs span {
+    color: hsl(164, 40%, 63%);
+}
+
+@media screen and (max-width:760px) {
+    .faqs>h2 {
+        font-size: 30px;
+    }
+
+}

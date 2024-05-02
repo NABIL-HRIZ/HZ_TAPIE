@@ -1,0 +1,35 @@
+.login_section {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    display: grid;
+}
+
+.form_sign_up {
+    place-self: center;
+    width: 45%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 30px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.row {
+    background-color: #fff;
+}
+
+.form_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .form_sign_up {
+        width: 90%;
+    }
+}

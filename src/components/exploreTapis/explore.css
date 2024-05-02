@@ -1,0 +1,95 @@
+.explore_tapis {
+    margin: 50px;
+}
+
+.explore_tapis h2 {
+    font-size: 40px;
+    font-style: italic;
+    color: #000;
+}
+
+.explore_tapis span {
+    color: hsl(164, 40%, 63%);
+}
+
+.explore_tapis p {
+    margin: 20px 0;
+    color: rgb(90, 89, 89);
+    max-width: 80%;
+    line-height: 25px;
+}
+
+.tapis_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+
+
+.tapis_list_item>img {
+    --s: 200px;
+    --b: 8px;
+    --g: 14px;
+    --c: #4ECDC4;
+
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2) solid #0009;
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: .3s;
+    opacity: 0.8;
+}
+
+.tapis_list_item>img:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+}
+
+.tapis_list_item>img+.tapis_list_item>img {
+    border-radius: 50%;
+}
+
+
+
+.tapis_list_item>h4 {
+    font-size: 18px;
+    margin-top: 30px;
+    color: rgb(99, 8, 8);
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.explore_tapis hr {
+    background-color: hsl(164, 40%, 63%);
+    height: 2px;
+    margin: 10px 0;
+    border: none;
+}
+
+.tapis_list_item .active {
+    border: 4px solid rgb(99, 8, 8);
+}
+
+
+@media screen and (max-width:760px) {
+
+    .explore_tapis h2 {
+        font-size: 30px;
+    }
+
+
+    .explore_tapis p {
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .tapis_list {
+        display: flex;
+        flex-direction: column;
+    }
+}
